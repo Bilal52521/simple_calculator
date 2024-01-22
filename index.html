@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="calculator">
+        <input readonly type="text" id="textdisplay">
+        <div class="buttons">
+            <button onclick="clearDis()">C</button>
+            <button onclick="displayAppend('/')">(</button>
+            <button onclick="displayAppend('/')">)</button>
+            <button onclick="displayAppend('/')">/</button>
+            <button onclick="displayAppend('7')">7</button>
+            <button onclick="displayAppend('8')">8</button>
+            <button onclick="displayAppend('9')">9</button>
+            <button onclick="displayAppend('*')">*</button>
+            <button onclick="displayAppend('4')">4</button>
+            <button onclick="displayAppend('5')">5</button>
+            <button onclick="displayAppend('6')">6</button>
+            <button onclick="displayAppend('-')">-</button>
+            <button onclick="displayAppend('3')">3</button>
+            <button onclick="displayAppend('2')">2</button>
+            <button onclick="displayAppend('1')">1</button>
+            <button onclick="displayAppend('+')">+</button>
+            <button onclick="displayAppend('0')">0</button>
+            <button onclick="displayAppend('.')">.</button>
+            <button class="equal" onclick="calculate()">=</button>
+        </div>
+    </div>  
+
+
+    <script src="script.js"></script>
+</body>
+</html>
