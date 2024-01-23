@@ -1,6 +1,7 @@
+
 let display = document.querySelector("#textdisplay");
 
-function displayAppend(value){
+function displayAppend(value) {
     display.value += value;
 }
 
@@ -9,16 +10,11 @@ function clearDis() {
 }
 
 function calculate() {
-    let calculate = display.value
+    let calculate = display.value;
 
-
-    if(calculate.includes("/0")){
-        display.value = "Error"
+    if (calculate.includes("/0")) {
+        display.value = "Error";
     } else {
-        display.value = eval(display.value)
+        display.value = eval(display.value);
     }
-}
-
-
-
-
+};
