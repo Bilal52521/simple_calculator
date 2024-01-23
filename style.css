@@ -1,14 +1,12 @@
 *,
 *::after,
-*::before
-{
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-body{
+body {
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -16,17 +14,17 @@ body{
     background-color: #333;
 }
 
-html,body{
+html, body {
     height: 100vh;
     font-family: sans-serif;
 }
 
-button{
+button {
     cursor: pointer;
     border: 0px;
 }
 
-input[type="text"]{
+input[type="text"] {
     background-color: transparent;
     text-align: end;
     width: 100%;
@@ -35,7 +33,7 @@ input[type="text"]{
     color: #d2d2d2;
 }
 
-#cal_main{
+#cal_main {
     width: 100%;
     max-width: 280px;
     background-color: #000;
@@ -44,28 +42,27 @@ input[type="text"]{
     border-radius: 52px;
 }
 
-.cal_header{
+.cal_header {
     margin-top: 92px;
     padding: 13px;
 }
 
-.cal_footer > * + *{
+.cal_footer > * + * {
     margin-top: 1rem;
 }
 
-.cal_footer > *:last-child{
+.cal_footer > *:last-child {
     gap: 1rem;
 }
 
-
-.btn_group{
+.btn_group {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 0.3rem;
 }
 
-.btn{
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,45 +71,59 @@ input[type="text"]{
     width: 50px;
     height: 50px;
     font-size: 20px;
-    transition: all 0.3s cubic-bezier(0.19, 1 , 0.22,1);
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.btn.btn-grow{
+.btn.btn-grow {
     flex-grow: 1;
     border-radius: 40px;
 }
 
-.btn:hover{
+.btn:hover {
     transform: translate(-2px, -3px);
 }
 
-.btn.active{
+.btn.active {
     background-color: #fff;
     color: #f96606;
 }
 
-.btn-gray{
+.btn-gray {
     background-color: #9f9f9f;
     color: #fff;
 }
 
-.btn-gray:hover{
+.btn-gray:hover {
     background-color: #fff;
 }
 
-.btn-dark-gray:hover{
+.btn-dark-gray:hover {
     background-color: #999;
 }
 
-.btn-orange{
+.btn-orange {
     background-color: #f69906;
 }
 
-.btn-dark-gray{
+.btn-dark-gray {
     background-color: #313131;
 }
 
-.btn-orange:hover{
+.btn-orange:hover {
     background-color: orange;
 }
 
+@media screen and (max-width: 600px) {
+    #cal_main {
+        max-width: 100%;
+    }
+
+    .btn_group {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
